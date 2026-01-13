@@ -71,23 +71,27 @@
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-const num = Number(prompt("введіть число"));
+// const num = Number(prompt("введіть число"));
 
-function whatTime(num) {
-  // Перевірка некоректного вводу
-  if (!Number.isFinite(num) || num < 0 || !Number.isInteger(num)) {
-    return "Некоректне значення";
-  }
-  // Обмеження до 24 годин
-  const totalMinutes = num % 1440;
+// function whatTime(num) {
+//   // Перевірка некоректного вводу
+//   if (!Number.isFinite(num) || num < 0 || !Number.isInteger(num)) {
+//     return "Некоректне значення";
+//   }
+//   // Обмеження до 24 годин
+//   const totalMinutes = num % 1440;
 
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
+//   const hours = Math.floor(totalMinutes / 60);
+//   const minutes = totalMinutes % 60;
 
-  const stringHours = String(hours).padStart(2, "0");
-  const stringMinutes = String(minutes).padStart(2, "0");
+//   const stringHours = String(hours).padStart(2, "0");
+//   const stringMinutes = String(minutes).padStart(2, "0");
 
-  return `${stringHours}:${stringMinutes}`;
-}
+//   return `${stringHours}:${stringMinutes}`;
+// }
 
-console.log(whatTime(num));
+// console.log(whatTime(num));
+
+
+
+
