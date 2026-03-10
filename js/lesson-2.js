@@ -66,14 +66,119 @@
 
 // !Завдання 5:
 
-const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-function findSmallestNumber(numbers) {
-  if (Array.isArray(numbers)) {
-    return Math.min(...numbers);
-  } else {
-    return "Sory, it is not an array!";
-  }
-}
+// function findSmallestNumber(numbers) {
+//   if (Array.isArray(numbers)) {
+//     return Math.min(...numbers);
+//   } else {
+//     return "Sory, it is not an array!";
+//   }
+// }
 
-console.log(findSmallestNumber(numbers));
+// console.log(findSmallestNumber(numbers));
+
+// !Завдання 6:
+
+// function findLongestWord(string) {
+//   const stringArray = string.split(" ");
+//   console.log(stringArray);
+
+//   let biggest = stringArray[0];
+
+//   for (let i = 1; i < stringArray.length; i++) {
+//     if (stringArray[i].length > biggest.length) {
+//       biggest = stringArray[i];
+//     }
+//   }
+
+//   return biggest;
+// }
+
+// console.log(findLongestWord("London is the capital of Great Britain")); // 'capital'
+
+// !Завдання 7:
+
+// const user = {
+//   name: "John",
+//   age: 20,
+//   hobby: "tenis",
+//   premium: true,
+// };
+
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// const keys = Object.keys(user);
+
+// for (const key of keys) {
+//   console.log(`${key}: ${user[key]}`);
+// }
+
+// !Завдання 8:
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+
+// const sum = Object.values(salaries).reduce((acc, value) => acc + value, 0);
+
+// console.log(sum);
+
+// !Завдання 9:
+
+// const calculator = {
+//   read(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   },
+//   exist() {
+//     return this.a !== undefined && this.b !== undefined;
+//   },
+//   sum() {
+//     if (this.exist() === true) {
+//       return this.a + this.b;
+//     } else {
+//       return "No such propeties";
+//     }
+//   },
+//   mult() {
+//     if (this.exist() === true) {
+//       return this.a * this.b;
+//     } else {
+//       return "No such propeties";
+//     }
+//   },
+// };
+
+// calculator.read(5, 3);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
+
+// !Завдання 10:
+
+// const fruits = [
+//   { name: "Яблуко", price: 45, quantity: 7 },
+//   { name: "Апельсин", price: 60, quantity: 4 },
+//   { name: "Банан", price: 125, quantity: 8 },
+//   { name: "Груша", price: 350, quantity: 2 },
+//   { name: "Виноград", price: 440, quantity: 3 },
+//   { name: "Банан", price: 125, quantity: 3 },
+// ];
+
+// function calcTotalPrice(fruits, fruitName) {
+//   let totalPrice = 0;
+
+//   for (const fruit of fruits) {
+//     if (fruit.name === fruitName) {
+//       totalPrice += fruit.price * fruit.quantity;
+//     }
+//   }
+
+//   return totalPrice;
+// }
+
+// console.log(calcTotalPrice(fruits, "Банан"));
