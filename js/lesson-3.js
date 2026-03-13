@@ -144,14 +144,82 @@
 
 // !Завдання 12:
 
-class Client {
-  #login;
-  #email;
+// class Client {
+//   #login;
+//   #email;
 
-  constructor(login, email) {
-    this.#login = login;
-    this.#email = email;
-  }
+//   constructor(login, email) {
+//     this.login = login;
+//     this.email = email;
+//   }
 
-  get login() {}
-}
+//   get login() {
+//     return this.#login;
+//   }
+
+//   set login(value) {
+//     this.#login = value;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(value) {
+//     this.#email = value;
+//   }
+// }
+
+// const client = new Client("john_doe", "john@example.com");
+
+// console.log(client.email);
+
+// !Завдання 13:
+
+// class Person {
+//   constructor(name, age, gender, email) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//     this.email = email;
+//   }
+
+//   getDetails() {
+//     return {
+//       name: this.name,
+//       age: this.age,
+//       gender: this.gender,
+//       email: this.email,
+//     };
+//   }
+// }
+
+// class Employee extends Person {
+//   constructor(name, age, gender, email, salary, department) {
+//     super(name, age, gender, email);
+//     this.salary = salary;
+//     this.department = department;
+//   }
+
+//   getEmployeeDetails() {
+//     return {
+//       salary: this.salary,
+//       department: this.department,
+//     };
+//   }
+// }
+
+// const employee = new Employee(
+//   "John Doe",      // name
+//   30,              // age
+//   "Male",          // gender
+//   "john@example.com", // email
+//   50000,           // salary
+//   "IT"             // department
+// );
+
+// console.log(employee.getDetails());
+// // → { name: 'John Doe', age: 30, gender: 'Male', email: 'john@example.com' }
+
+// console.log(employee.getEmployeeDetails());
+// // → { salary: 50000, department: 'IT' }
